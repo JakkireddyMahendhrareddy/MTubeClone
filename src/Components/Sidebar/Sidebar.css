@@ -83,7 +83,13 @@
 
 /* Responsive Design */
 @media (max-width: 900px) {
-    .sidebar {
+    .side-link p {
         display: none;
     }
+    .subscribed-list h3 {
+        font-size: 9px;
+        margin: 20px 0;
+        color: #bdc3c7; /* Lighter gray for headings */
+    }
+
 }
