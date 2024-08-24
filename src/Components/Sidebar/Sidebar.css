@@ -1,0 +1,89 @@
+/* Sidebar Container */
+.sidebar {
+    background: #2c3e50; /* Darker background color for sidebar */
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+    color: #ecf0f1; /* Light text color for better contrast */
+}
+
+/* Shortcut Links */
+.sortcut-links img {
+    width: 20px;
+    margin-right: 20px;
+    filter: brightness(0) invert(1); /* Invert colors for icons */
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.side-link p {
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+.side-link:hover {
+    background-color: #034485; /* Darker shade on hover */
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.side-link.active img {
+    padding-bottom: 2px;
+    border-bottom: 3px solid #e74c3c; /* Red underline for active link */
+}
+
+/* Horizontal Rule */
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    width: 85%;
+    background: #7f8c8d; /* Gray color for the divider */
+}
+
+/* Subscribed List */
+.subscribed-list h3 {
+    font-size: 14px;
+    margin: 20px 0;
+    color: #bdc3c7; /* Lighter gray for headings */
+}
+
+.subscribed-list img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+    /* filter: brightness(0) invert(1);  */
+}
+
+/* Small Sidebar Styles */
+.small-sidebar {
+    width: 5%;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.small-sidebar p, .small-sidebar h3 {
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}

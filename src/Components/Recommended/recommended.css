@@ -1,0 +1,56 @@
+.recommended {
+    flex-basis: 30%;
+    padding: 10px; /* Add some padding for better spacing */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.side-video-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px; /* Increase margin for better separation */
+    padding: 8px;
+    border-radius: 6px; /* Add slight rounding to the edges */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.side-video-list:hover {
+    background-color: #e6e6e6; /* Light gray background on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.side-video-list img {
+    flex-basis: 49%;
+    width: 100%; /* Ensure image takes up the full width of its container */
+    border-radius: 6px; /* Match the border-radius of the container */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.vid-info {
+    flex-basis: 49%;
+    padding-left: 8px; /* Add spacing between image and text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+.vid-info h4 {
+    font-size: 14px; /* Slightly larger font for readability */
+    margin-bottom: 4px;
+    color: #333; /* Darker color for contrast */
+    line-height: 1.4; /* Increase line height for readability */
+    font-weight: 600; /* Bold text for emphasis */
+}
+
+.vid-info p {
+    font-size: 12px; /* Consistent font size for smaller details */
+    color: #777; /* Lighter color for less emphasis */
+}
+
+@media (max-width:900px) {
+    .recommended{
+        flex-basis: 100%;
+    }
+    
+}
